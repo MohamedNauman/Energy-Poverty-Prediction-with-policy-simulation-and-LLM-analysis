@@ -45,3 +45,20 @@ Scenario Comparison 📊: This tab provides a comparative visualization of all p
 LLM Analysis 🧠: By clicking a button, users can trigger an LLM (Cohere) to generate an in-depth analysis of the policy simulations. This includes an enriched summary of the policy's impact, specific policy recommendations, and an exploration of potential alternative scenarios or unintended consequences, leveraging the quantitative and qualitative insights from the project.
 
 In conclusion, the project successfully built a predictive model for household power consumption and demonstrated a data-driven approach to evaluating the potential impact of energy efficiency policies, providing valuable insights for decision-makers, all encapsulated within an intuitive Gradio application.
+
+**To move your Gradio app to Hugging Face Spaces, you'll need to create an app.py file and a requirements.txt file in your repository:**
+
+1. Create app.py: Copy the code from cell DxpCj7MWfzlI into a new file named app.py.
+2. Create requirements.txt: Create a file named requirements.txt in the same directory with the following content:
+gradio
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+seaborn
+cohere
+xgboost
+shap
+3. Upload to Hugging Face Spaces: Upload these two files (app.py and requirements.txt) to your Hugging Face Space repository.
+4. Cohere API Key: Remember to set your COHERE_API_KEY as a Space Secret in your Hugging Face Space settings for the app to function correctly.
